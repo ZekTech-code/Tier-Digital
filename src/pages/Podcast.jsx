@@ -7,17 +7,10 @@ import {
   Headphones,
   Mic,
 } from "lucide-react";
-import { FaSpotify, FaApple, FaYoutube } from "react-icons/fa";
 import AudioPlayer from "../components/AudioPlayer";
 import PageHeader from "../components/PageHeader";
 import ScrollReveal from "../components/ScrollReveal";
 import { podcast, episodes } from "../data/podcastEpisodes";
-
-const platformIcons = {
-  Spotify: <FaSpotify className="w-5 h-5" />,
-  "Apple Podcasts": <FaApple className="w-5 h-5" />,
-  YouTube: <FaYoutube className="w-5 h-5" />,
-};
 
 const Podcast = () => {
   const [activeId, setActiveId] = useState(null);
@@ -34,19 +27,6 @@ const Podcast = () => {
         eyebrow="The Scale Sessions Podcast"
         description="Unfiltered conversations with founders and marketers who scaled past seven figures, the wins, the expensive mistakes, and the numbers behind both."
       >
-        <div className="flex flex-wrap justify-center gap-3 mt-10">
-          {podcast.platforms.map((platform) => (
-            <a
-              key={platform.name}
-              href={platform.url}
-              onClick={(e) => e.preventDefault()}
-              className="flex items-center gap-2.5 px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg font-bold text-sm text-slate-700 dark:text-slate-200 shadow-sm hover:border-indigo-300 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 transition-all"
-            >
-              {platformIcons[platform.name]}
-              {platform.name}
-            </a>
-          ))}
-        </div>
         <p className="mt-6 text-sm font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
           {podcast.schedule}
         </p>
