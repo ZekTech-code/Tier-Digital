@@ -4,6 +4,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieConsent from "./components/CookieConsent";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
@@ -22,6 +23,7 @@ const App = () => {
     <ThemeProvider>
       <BrowserRouter>
         <ScrollToTop />
+        <CookieConsent />
         <div className="bg-slate-50 dark:bg-slate-950 min-h-screen flex flex-col">
           <Navbar />
           <main className="grow">

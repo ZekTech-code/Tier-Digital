@@ -180,9 +180,12 @@ const Footer = () => {
             <Link to="/terms" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
               Terms of Service
             </Link>
-            <a href="#" onClick={(e) => e.preventDefault()} className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+            <button
+              onClick={() => { localStorage.removeItem("cookie-consent"); window.location.reload(); }}
+              className="text-sm text-slate-500 hover:text-indigo-400 transition-colors"
+            >
               Cookie Settings
-            </a>
+            </button>
           </div>
         </div>
       </div>
