@@ -24,7 +24,7 @@ const App = () => {
       <BrowserRouter>
         <ScrollToTop />
         <CookieConsent />
-        <div className="bg-slate-50 dark:bg-slate-950 min-h-screen flex flex-col">
+        <div className="bg-slate-50 dark:bg-slate-950 min-h-screen flex flex-col overflow-x-hidden">
           <Navbar />
           <main className="grow">
             <Routes>

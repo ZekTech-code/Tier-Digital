@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Leaf, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -14,6 +15,20 @@ const Navbar = () => {
     { name: "Podcast", href: "/podcast" },
     { name: "Career", href: "/careers" },
   ];
+
+  const handleHashClick = (e, href) => {
+    if (href.includes("#")) {
+      const hash = href.split("#")[1];
+      if (location.pathname === "/") {
+        e.preventDefault();
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+        setIsOpen(false);
+      }
+    }
+  };
 
   const linkClass = ({ isActive }) =>
     `text-sm font-bold uppercase tracking-wide relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300 ${
@@ -48,6 +63,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.href}
                     end={item.href === "/"}
+                    onClick={(e) => handleHashClick(e, item.href)}
                     className={
                       item.href.includes("#")
                         ? "text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 uppercase tracking-wide relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300"
@@ -104,7 +120,7 @@ const Navbar = () => {
                     : "text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 bg-slate-50 dark:bg-slate-900 hover:bg-indigo-50 dark:hover:bg-slate-800 border-slate-100 dark:border-slate-800"
                 }`
               }
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => { handleHashClick(e, item.href); setIsOpen(false); }}
             >
               {item.name}
             </NavLink>

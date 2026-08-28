@@ -111,7 +111,7 @@ const Contact = () => {
         description={
           applyingRole
             ? "Tell us about yourself and share your work. We review every application personally and respond within a week."
-            : "Tell us where you are and where you want to be. We'll show you the gap — and exactly how we'd close it."
+            : "Tell us where you are and where you want to be. We'll show you the gap, and exactly how we'd close it."
         }
       />
 
