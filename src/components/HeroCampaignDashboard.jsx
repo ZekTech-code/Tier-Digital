@@ -85,7 +85,7 @@ export default function HeroCampaignDashboard() {
   const area = `${line.d} L ${CHART_W} ${CHART_H} L 0 ${CHART_H} Z`;
 
   return (
-    <div className="relative mx-auto w-full max-w-md sm:max-w-lg lg:max-w-none" aria-hidden="true">
+    <div className="relative mx-auto w-full max-w-md sm:max-w-lg lg:max-w-none pt-10 sm:pt-12" aria-hidden="true">
       {/* Campaign analytics dashboard */}
       <div className="relative rounded-3xl border border-white/10 bg-[#0a0e1a] p-4 sm:p-5 md:p-6 shadow-[0_30px_70px_-25px_rgba(15,23,42,0.55)]">
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -221,7 +221,7 @@ export default function HeroCampaignDashboard() {
 
       {/* Conversion growth */}
       <div
-        className="absolute -bottom-6 right-2 z-20 flex items-center gap-2 animate-float rounded-2xl border border-white/10 bg-[#111827]/92 px-2.5 py-2 shadow-2xl shadow-black/60 backdrop-blur-xl sm:-bottom-8 sm:right-6 sm:gap-3 sm:px-3.5 sm:py-2.5"
+        className="absolute -right-2 top-1 z-20 flex items-center gap-2 animate-float rounded-2xl border border-white/10 bg-[#111827]/92 px-2.5 py-2 shadow-2xl shadow-black/60 backdrop-blur-xl sm:-right-4 sm:top-1.5 sm:gap-3 sm:px-3.5 sm:py-2.5"
         style={{ animationDelay: "2s" }}
       >
         <div>
