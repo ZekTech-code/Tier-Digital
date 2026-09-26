@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-10 items-start">
 
           {/* Left Content */}
           <div className="text-center lg:text-left z-10 flex flex-col items-center lg:items-start">
@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
 
           {/* Right Dashboard Visual */}
-          <div className="relative z-10 mt-6 lg:mt-0 animate-fade-in-right opacity-0 animate-delay-300">
+          <div className="relative z-10 animate-fade-in-right opacity-0 animate-delay-300">
             <HeroCampaignDashboard />
           </div>
 
