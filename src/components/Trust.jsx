@@ -1,16 +1,17 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
+import { IMG } from "../config/images";
 
 const Trust = () => {
   const logos = [
-    { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg", width: "w-24" },
-    { name: "Microsoft", url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg", width: "w-32" },
-    { name: "Google", url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg", width: "w-24" },
-    { name: "Meta", url: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg", width: "w-28" },
-    { name: "Airbnb", url: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg", width: "w-24" },
-    { name: "Spotify", url: "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg", width: "w-28" },
-    { name: "Shopify", url: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg", width: "w-28" },
-    { name: "Netflix", url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg", width: "w-24" },
+    { name: "Amazon", url: IMG.LOGO_AMAZON, width: "w-24" },
+    { name: "Microsoft", url: IMG.LOGO_MICROSOFT, width: "w-32" },
+    { name: "Google", url: IMG.LOGO_GOOGLE, width: "w-24" },
+    { name: "Meta", url: IMG.LOGO_META, width: "w-28" },
+    { name: "Airbnb", url: IMG.LOGO_AIRBNB, width: "w-24" },
+    { name: "Spotify", url: IMG.LOGO_SPOTIFY, width: "w-28" },
+    { name: "Shopify", url: IMG.LOGO_SHOPIFY, width: "w-28" },
+    { name: "Netflix", url: IMG.LOGO_NETFLIX, width: "w-24" },
   ];
 
   return (

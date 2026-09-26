@@ -1,25 +1,26 @@
 import React from "react";
+import { IMG } from "../config/images";
 
 const Logos = () => {
   const logos = [
     {
       name: "Facebook Marketing Partner",
-      img: "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png",
+      img: IMG.LOGO_FACEBOOK,
       sub: "Premier Partner",
     },
     {
       name: "Google Partner",
-      img: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      img: IMG.LOGO_GOOGLE,
       sub: "Google Endorsed",
     },
     {
       name: "Forbes",
-      img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Forbes_logo.svg",
+      img: IMG.LOGO_FORBES,
       sub: "Agency Council",
     },
     {
       name: "Inc 5000",
-      img: "https://upload.wikimedia.org/wikipedia/commons/9/94/Inc._magazine_logo.svg",
+      img: IMG.LOGO_INC,
       sub: "Fastest Growing",
     },
   ];

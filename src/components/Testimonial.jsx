@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
+import { IMG } from '../config/images';
 
 const testimonials = [
   {
@@ -8,7 +9,7 @@ const testimonials = [
     role: 'Chief Marketing Officer',
     company: 'TechFlow',
     content: "Working with this team has completely transformed our online presence. The attention to detail and modern design aesthetic is truly unparalleled. We've seen a 40% increase in user engagement since the redesign.",
-    image: 'https://i.pravatar.cc/150?img=47'
+    image: IMG.AVATAR_47
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ const testimonials = [
     role: 'Founder & CEO',
     company: 'Nexus Innovations',
     content: "An absolute game-changer. The seamless integration and dynamic animations brought our platform to life. They didn't just build a website; they crafted a digital experience that our users love.",
-    image: 'https://i.pravatar.cc/150?img=11'
+    image: IMG.AVATAR_11
   },
   {
     id: 3,
@@ -24,7 +25,7 @@ const testimonials = [
     role: 'Product Lead',
     company: 'Vanguard Systems',
     content: "Professional, innovative, and incredibly responsive. The team understood our vision immediately and delivered a product that exceeded all expectations. Highly recommended for any serious web project.",
-    image: 'https://i.pravatar.cc/150?img=32'
+    image: IMG.AVATAR_32
   }
 ];
 

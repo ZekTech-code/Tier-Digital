@@ -1,3 +1,5 @@
+import { IMG } from "../config/images";
+
 export const benefits = [
   {
     title: "Remote-first, always",
@@ -48,19 +50,19 @@ export const teamMembers = [
     name: "Amara Bello",
     role: "Head of Performance",
     quote: "I came for the challenge, stayed for the people. Every day pushes me to think sharper.",
-    avatar: "https://i.pravatar.cc/150?img=47",
+    avatar: IMG.AVATAR_47,
   },
   {
     name: "David Okafor",
     role: "Creative Director",
     quote: "Tier lets me blend data and art in ways agencies twice our size can't. That's rare.",
-    avatar: "https://i.pravatar.cc/150?img=11",
+    avatar: IMG.AVATAR_11,
   },
   {
     name: "Priya Nair",
     role: "Lead Analyst",
     quote: "I've never worked somewhere that actually uses insights to change strategy, not just fill decks.",
-    avatar: "https://i.pravatar.cc/150?img=32",
+    avatar: IMG.AVATAR_32,
   },
 ];
 

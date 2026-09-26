@@ -8,6 +8,7 @@ import {
   Target,
 } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import { IMG } from "../config/images";
 
 const values = [
   {
@@ -41,10 +42,10 @@ const values = [
 ];
 
 const team = [
-  { name: "David Okafor", role: "Head of Performance", image: "https://i.pravatar.cc/150?img=12" },
-  { name: "Amara Bello", role: "Creative Director", image: "https://i.pravatar.cc/150?img=47" },
-  { name: "Priya Nair", role: "Analytics Lead", image: "https://i.pravatar.cc/150?img=32" },
-  { name: "Tunde Adeyemi", role: "Client Partner", image: "https://i.pravatar.cc/150?img=11" },
+  { name: "David Okafor", role: "Head of Performance", image: IMG.AVATAR_12 },
+  { name: "Amara Bello", role: "Creative Director", image: IMG.AVATAR_47 },
+  { name: "Priya Nair", role: "Analytics Lead", image: IMG.AVATAR_32 },
+  { name: "Tunde Adeyemi", role: "Client Partner", image: IMG.AVATAR_11 },
 ];
 
 const About = () => {
