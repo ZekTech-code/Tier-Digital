@@ -61,10 +61,7 @@ export const IMG = {
   AVATAR_32: pick("AVATAR_32"),
   AVATAR_47: pick("AVATAR_47"),
 
-  LOGO_FACEBOOK: pick("LOGO_FACEBOOK"),
   LOGO_GOOGLE: pick("LOGO_GOOGLE"),
-  LOGO_FORBES: pick("LOGO_FORBES"),
-  LOGO_INC: pick("LOGO_INC"),
   LOGO_AMAZON: pick("LOGO_AMAZON"),
   LOGO_MICROSOFT: pick("LOGO_MICROSOFT"),
   LOGO_META: pick("LOGO_META"),

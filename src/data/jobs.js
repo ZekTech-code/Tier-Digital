@@ -48,19 +48,19 @@ export const benefits = [
 export const teamMembers = [
   {
     name: "Amara Bello",
-    role: "Head of Performance",
-    quote: "I came for the challenge, stayed for the people. Every day pushes me to think sharper.",
+    role: "Creative Director",
+    quote: "Tier lets me blend data and art in ways agencies twice our size can't. That's rare.",
     avatar: IMG.AVATAR_47,
   },
   {
     name: "David Okafor",
-    role: "Creative Director",
-    quote: "Tier lets me blend data and art in ways agencies twice our size can't. That's rare.",
-    avatar: IMG.AVATAR_11,
+    role: "Head of Performance",
+    quote: "I came for the challenge, stayed for the people. Every day pushes me to think sharper.",
+    avatar: IMG.AVATAR_12,
   },
   {
     name: "Priya Nair",
-    role: "Lead Analyst",
+    role: "Analytics Lead",
     quote: "I've never worked somewhere that actually uses insights to change strategy, not just fill decks.",
     avatar: IMG.AVATAR_32,
   },

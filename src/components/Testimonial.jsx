@@ -1,31 +1,18 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
-import { IMG } from '../config/images';
 
 const testimonials = [
   {
     id: 1,
-    name: 'Sarah Jenkins',
-    role: 'Chief Marketing Officer',
-    company: 'TechFlow',
     content: "Working with this team has completely transformed our online presence. The attention to detail and modern design aesthetic is truly unparalleled. We've seen a 40% increase in user engagement since the redesign.",
-    image: IMG.AVATAR_47
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    role: 'Founder & CEO',
-    company: 'Nexus Innovations',
     content: "An absolute game-changer. The seamless integration and dynamic animations brought our platform to life. They didn't just build a website; they crafted a digital experience that our users love.",
-    image: IMG.AVATAR_11
   },
   {
     id: 3,
-    name: 'Elena Rodriguez',
-    role: 'Product Lead',
-    company: 'Vanguard Systems',
     content: "Professional, innovative, and incredibly responsive. The team understood our vision immediately and delivered a product that exceeded all expectations. Highly recommended for any serious web project.",
-    image: IMG.AVATAR_32
   }
 ];
 
@@ -52,27 +39,15 @@ const Testimonial = () => {
               key={testimonial.id}
               className="bg-white dark:bg-slate-800/60 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-slate-700/60 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full"
             >
-              {/* Quote Icon */}
               <div className="mb-6 text-blue-500 opacity-20 group-hover:opacity-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-all duration-300">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.017 21L16.411 14.973V3H24V14.973L21.571 21H14.017ZM3 21L5.394 14.973V3H12.983V14.973L10.554 21H3Z" />
                 </svg>
               </div>
 
-              <p className="text-gray-700 dark:text-slate-200 text-lg leading-relaxed mb-8 relative z-10 grow">
+              <p className="text-gray-700 dark:text-slate-200 text-lg leading-relaxed relative z-10 grow">
                 "{testimonial.content}"
               </p>
-
-              <div className="flex items-center gap-4 mt-auto">
-                <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-gray-100 dark:ring-slate-700 group-hover:ring-blue-100 dark:group-hover:ring-blue-500/40 transition-all duration-300">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 dark:text-white">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500 dark:text-slate-400 font-medium">{testimonial.role}</p>
-                  <p className="text-xs text-blue-600 dark:text-blue-400 font-semibold mt-0.5">{testimonial.company}</p>
-                </div>
-              </div>
             </div>
           ))}
         </div>
