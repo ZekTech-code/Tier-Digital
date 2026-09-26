@@ -1,43 +1,60 @@
 const PLACEHOLDER = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="rgb(226,232,240)"/></svg>`;
 
-const pick = (value) => (value && value.length > 0 ? value : PLACEHOLDER);
+const parseImageMap = () => {
+  try {
+    const raw = import.meta.env.VITE_IMAGE_MAP;
+    const parsed = typeof raw === "string" ? JSON.parse(raw) : null;
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+      ? parsed
+      : {};
+  } catch {
+    return {};
+  }
+};
+
+const images = parseImageMap();
+
+const pick = (key) =>
+  typeof images[key] === "string" && images[key].length > 0
+    ? images[key]
+    : PLACEHOLDER;
 
 export const IMG = {
-  HERO_TEAM: pick(import.meta.env.VITE_IMG_HERO_TEAM),
+  HERO_TEAM: pick("HERO_TEAM"),
 
-  SVC_PAID_SOCIAL: pick(import.meta.env.VITE_IMG_SVC_PAID_SOCIAL),
-  SVC_UGC: pick(import.meta.env.VITE_IMG_SVC_UGC),
-  SVC_CRO: pick(import.meta.env.VITE_IMG_SVC_CRO),
-  SVC_EMAIL: pick(import.meta.env.VITE_IMG_SVC_EMAIL),
-  ANALYTICS: pick(import.meta.env.VITE_IMG_ANALYTICS),
+  SVC_PAID_SOCIAL: pick("SVC_PAID_SOCIAL"),
+  SVC_UGC: pick("SVC_UGC"),
+  SVC_CRO: pick("SVC_CRO"),
+  SVC_EMAIL: pick("SVC_EMAIL"),
+  ANALYTICS: pick("ANALYTICS"),
 
-  PODCAST_MIC: pick(import.meta.env.VITE_IMG_PODCAST_MIC),
-  PODCAST_STUDIO: pick(import.meta.env.VITE_IMG_PODCAST_STUDIO),
-  PODCAST_TEAM: pick(import.meta.env.VITE_IMG_PODCAST_TEAM),
+  PODCAST_MIC: pick("PODCAST_MIC"),
+  PODCAST_STUDIO: pick("PODCAST_STUDIO"),
+  PODCAST_TEAM: pick("PODCAST_TEAM"),
 
-  BEAUTY: pick(import.meta.env.VITE_IMG_BEAUTY),
-  FITNESS: pick(import.meta.env.VITE_IMG_FITNESS),
-  HOME: pick(import.meta.env.VITE_IMG_HOME),
-  ORGANICS: pick(import.meta.env.VITE_IMG_ORGANICS),
-  RETAIL: pick(import.meta.env.VITE_IMG_RETAIL),
+  BEAUTY: pick("BEAUTY"),
+  FITNESS: pick("FITNESS"),
+  HOME: pick("HOME"),
+  ORGANICS: pick("ORGANICS"),
+  RETAIL: pick("RETAIL"),
 
-  FUNNEL: pick(import.meta.env.VITE_IMG_FUNNEL),
-  WEBDESIGN: pick(import.meta.env.VITE_IMG_WEBDESIGN),
-  SHOPPING: pick(import.meta.env.VITE_IMG_SHOPPING),
-  DATA_CHART: pick(import.meta.env.VITE_IMG_DATA_CHART),
-  DATA_REPORT: pick(import.meta.env.VITE_IMG_DATA_REPORT),
-  DATA_SCREEN: pick(import.meta.env.VITE_IMG_DATA_SCREEN),
-  DATA_ANALYST: pick(import.meta.env.VITE_IMG_DATA_ANALYST),
-  DATA_MEETING: pick(import.meta.env.VITE_IMG_DATA_MEETING),
-  SOCIAL_ADS: pick(import.meta.env.VITE_IMG_SOCIAL_ADS),
-  SOCIAL_MEDIA: pick(import.meta.env.VITE_IMG_SOCIAL_MEDIA),
-  MOBILE_ADS: pick(import.meta.env.VITE_IMG_MOBILE_ADS),
-  STRATEGY: pick(import.meta.env.VITE_IMG_STRATEGY),
-  TEAM_COLLAB: pick(import.meta.env.VITE_IMG_TEAM_COLLAB),
-  TEAM_MEETING: pick(import.meta.env.VITE_IMG_TEAM_MEETING),
-  CREATIVE: pick(import.meta.env.VITE_IMG_CREATIVE),
-  TEAM_DISCUSSION: pick(import.meta.env.VITE_IMG_TEAM_DISCUSSION),
-  TEAM_LAPTOPS: pick(import.meta.env.VITE_IMG_TEAM_LAPTOPS),
+  FUNNEL: pick("FUNNEL"),
+  WEBDESIGN: pick("WEBDESIGN"),
+  SHOPPING: pick("SHOPPING"),
+  DATA_CHART: pick("DATA_CHART"),
+  DATA_REPORT: pick("DATA_REPORT"),
+  DATA_SCREEN: pick("DATA_SCREEN"),
+  DATA_ANALYST: pick("DATA_ANALYST"),
+  DATA_MEETING: pick("DATA_MEETING"),
+  SOCIAL_ADS: pick("SOCIAL_ADS"),
+  SOCIAL_MEDIA: pick("SOCIAL_MEDIA"),
+  MOBILE_ADS: pick("MOBILE_ADS"),
+  STRATEGY: pick("STRATEGY"),
+  TEAM_COLLAB: pick("TEAM_COLLAB"),
+  TEAM_MEETING: pick("TEAM_MEETING"),
+  CREATIVE: pick("CREATIVE"),
+  TEAM_DISCUSSION: pick("TEAM_DISCUSSION"),
+  TEAM_LAPTOPS: pick("TEAM_LAPTOPS"),
 };
 
 export default IMG;
