@@ -20,7 +20,6 @@ const pick = (key) =>
     : PLACEHOLDER;
 
 export const IMG = {
-  HERO_MAIN: pick("HERO_MAIN"),
   HERO_TEAM: pick("HERO_TEAM"),
 
   SVC_PAID_SOCIAL: pick("SVC_PAID_SOCIAL"),

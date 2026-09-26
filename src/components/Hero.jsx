@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Play, Target, TrendingUp } from "lucide-react";
-import { IMG } from "../config/images";
+import { ArrowRight, Play } from "lucide-react";
+import HeroCampaignDashboard from "./HeroCampaignDashboard";
 
 const Hero = () => {
   return (
@@ -42,43 +42,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Image/Graphic */}
-          <div className="relative mx-auto w-full max-w-[320px] sm:max-w-md lg:max-w-none flex justify-center z-10 mt-6 lg:mt-0 animate-fade-in-right opacity-0 animate-delay-300">
-            {/* Main Image Masked */}
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-white dark:border-slate-800 bg-white dark:bg-slate-800 w-full aspect-4/3 lg:aspect-5/4 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-               <img
-                src={IMG.HERO_MAIN}
-                alt="Tier Digital marketing team collaborating on a client campaign"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-indigo-900/40 to-transparent"></div>
-            </div>
-
-            {/* Floating Card 1 */}
-            <div className="absolute top-8 -left-4 sm:-left-12 lg:-left-10 bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 z-20 animate-float" style={{animationDelay: '0s'}}>
-              <div className="flex items-center gap-4">
-                 <div className="bg-emerald-100 dark:bg-emerald-500/20 p-2.5 rounded-xl text-emerald-600 dark:text-emerald-400">
-                    <TrendingUp className="w-6 h-6" />
-                 </div>
-                 <div>
-                   <p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">ROAS</p>
-                   <p className="text-xl font-black text-slate-800 dark:text-white">+340%</p>
-                 </div>
-              </div>
-            </div>
-
-            {/* Floating Card 2 */}
-            <div className="absolute bottom-12 -right-4 sm:-right-8 lg:-right-6 bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 z-20 animate-float" style={{animationDelay: '2s'}}>
-              <div className="flex items-center gap-4">
-                 <div className="bg-blue-100 dark:bg-blue-500/20 p-2.5 rounded-xl text-blue-600 dark:text-blue-400">
-                    <Target className="w-6 h-6" />
-                 </div>
-                 <div>
-                   <p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Leads</p>
-                   <p className="text-xl font-black text-slate-800 dark:text-white">10k+</p>
-                 </div>
-              </div>
-            </div>
+          {/* Right Dashboard Visual */}
+          <div className="relative z-10 mt-6 lg:mt-0 animate-fade-in-right opacity-0 animate-delay-300">
+            <HeroCampaignDashboard />
           </div>
 
         </div>
