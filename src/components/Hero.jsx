@@ -45,11 +45,11 @@ const Hero = () => {
           {/* Right Image/Graphic */}
           <div className="relative mx-auto w-full max-w-[320px] sm:max-w-md lg:max-w-none flex justify-center z-10 mt-6 lg:mt-0 animate-fade-in-right opacity-0 animate-delay-300">
             {/* Main Image Masked */}
-            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-white dark:border-slate-800 bg-white dark:bg-slate-800 w-full aspect-4/5 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-white dark:border-slate-800 bg-white dark:bg-slate-800 w-full aspect-4/3 lg:aspect-5/4 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
                <img
-                src={IMG.HERO_TEAM}
-                alt="Marketing Expert"
-                className="w-full h-full object-cover"
+                src={IMG.HERO_MAIN}
+                alt="Tier Digital marketing team collaborating on a client campaign"
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-linear-to-t from-indigo-900/40 to-transparent"></div>
             </div>
