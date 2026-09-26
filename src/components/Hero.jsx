@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Target, TrendingUp } from "lucide-react";
+import { IMG } from "../config/images";
 
 const Hero = () => {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-      {/* Premium Background Blurs */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-125 h-125 bg-blue-400 dark:bg-indigo-600 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[140px] opacity-20"></div>
-      <div className="absolute top-1/2 left-0 -ml-20 w-100 h-100 bg-indigo-400 dark:bg-blue-700 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[140px] opacity-20"></div>
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-10 items-center">
 
@@ -50,7 +47,7 @@ const Hero = () => {
             {/* Main Image Masked */}
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-white dark:border-slate-800 bg-white dark:bg-slate-800 w-full aspect-4/5 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
                <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop"
+                src={IMG.HERO_TEAM}
                 alt="Marketing Expert"
                 className="w-full h-full object-cover"
               />

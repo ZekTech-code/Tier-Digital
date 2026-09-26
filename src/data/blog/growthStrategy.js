@@ -1,3 +1,5 @@
+import { IMG } from "../../config/images";
+
 export const growthStrategyPosts = [
   {
     slug: "cac-inflation-survival-guide",
@@ -10,7 +12,7 @@ export const growthStrategyPosts = [
     date: "Jul 9, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+      IMG.SVC_CRO,
     content: [
       {
         heading: "The math nobody can escape",
@@ -50,7 +52,7 @@ export const growthStrategyPosts = [
     date: "Jun 26, 2026",
     readTime: "8 min read",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+      IMG.HERO_TEAM,
     content: [
       {
         heading: "Days 1–30: infrastructure before impressions",
@@ -91,7 +93,7 @@ export const growthStrategyPosts = [
     date: "Jun 12, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
+      IMG.STRATEGY,
     content: [
       {
         heading: "Scaling is earned, not scheduled",
@@ -131,7 +133,7 @@ export const growthStrategyPosts = [
     date: "May 29, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1200&auto=format&fit=crop",
+      IMG.PODCAST_TEAM,
     content: [
       {
         heading: "Concentration risk is the silent killer",
@@ -171,7 +173,7 @@ export const growthStrategyPosts = [
     date: "May 15, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
+      IMG.RETAIL,
     content: [
       {
         heading: "Why a 10% price increase beats a 10% sales increase",
@@ -211,7 +213,7 @@ export const growthStrategyPosts = [
     date: "May 1, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
+      IMG.TEAM_LAPTOPS,
     content: [
       {
         heading: "The compounding nobody models",

@@ -296,7 +296,6 @@ const Contact = () => {
           {/* Sidebar */}
           <aside className="lg:col-span-2 space-y-6">
             <div className="bg-linear-to-br from-indigo-600 to-blue-700 rounded-3xl p-8 text-white relative overflow-hidden">
-              <div className="absolute -top-16 -right-16 w-48 h-48 bg-white opacity-10 rounded-full blur-3xl"></div>
               <h3 className="text-xl font-black mb-6 relative z-10">
                 What happens next
               </h3>

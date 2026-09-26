@@ -6,6 +6,8 @@ import {
   LineChart,
 } from "lucide-react";
 
+import { IMG } from "../config/images";
+
 export const services = [
   {
     slug: "paid-social-advertising",
@@ -27,7 +29,7 @@ export const services = [
       { value: "150+", label: "Brands Scaled" },
       { value: "38%", label: "Avg CPA Reduction" },
     ],
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop",
+    image: IMG.SVC_PAID_SOCIAL,
   },
   {
     slug: "ugc-creative-studio",
@@ -49,7 +51,7 @@ export const services = [
       { value: "52%", label: "Lower CPM" },
       { value: "24hr", label: "Turnaround Time" },
     ],
-    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop",
+    image: IMG.SVC_UGC,
   },
   {
     slug: "conversion-rate-optimization",
@@ -71,7 +73,7 @@ export const services = [
       { value: "$2.4M", label: "Revenue Unlocked" },
       { value: "14 Days", label: "Time to First Win" },
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+    image: IMG.SVC_CRO,
   },
   {
     slug: "email-sms-marketing",
@@ -93,7 +95,7 @@ export const services = [
       { value: "4.8x", label: "Email ROI" },
       { value: "28%", label: "SMS Click Rate" },
     ],
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=800&auto=format&fit=crop",
+    image: IMG.SVC_EMAIL,
   },
   {
     slug: "advanced-analytics",
@@ -115,7 +117,7 @@ export const services = [
       { value: "Real-Time", label: "Dashboard Updates" },
       { value: "2x", label: "Faster Decisions" },
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    image: IMG.ANALYTICS,
   },
 ];
 

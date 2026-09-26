@@ -357,7 +357,7 @@ const Careers = () => {
           </div>
 
           {/* General application */}
-          <div className="mt-14 bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-indigo-950/50 dark:to-blue-950/50 rounded-xl p-8 md:p-10">
+          <div className="mt-14 bg-slate-50 dark:bg-slate-900 rounded-xl p-8 md:p-10">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-black text-slate-900 dark:text-white mb-2">

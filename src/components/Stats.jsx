@@ -48,8 +48,6 @@ const CountUp = ({ target, prefix, suffix, decimals }) => {
 const Stats = () => {
   return (
     <section className="py-20 relative overflow-hidden bg-white dark:bg-slate-900">
-      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] bg-size-[20px_20px] opacity-40"></div>
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <ScrollReveal animation="fade-up">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">

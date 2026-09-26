@@ -29,7 +29,6 @@ const BlogPost = () => {
     <>
       {/* Hero */}
       <section className="relative pt-36 pb-12 lg:pt-44 overflow-hidden">
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-125 h-125 bg-blue-400 dark:bg-indigo-600 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[140px] opacity-20"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/blog"

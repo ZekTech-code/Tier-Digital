@@ -148,7 +148,6 @@ const Podcast = () => {
           <ScrollReveal animation="fade-scale">
           {/* Guest CTA */}
           <div className="mt-16 bg-linear-to-br from-indigo-600 to-blue-700 rounded-xl p-8 md:p-12 text-white text-center relative overflow-hidden">
-            <div className="absolute -top-24 -right-24 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl"></div>
             <h3 className="text-2xl md:text-3xl font-black mb-3 relative z-10">
               Got a growth story to share?
             </h3>

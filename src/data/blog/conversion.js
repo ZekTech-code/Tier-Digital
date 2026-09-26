@@ -1,3 +1,5 @@
+import { IMG } from "../../config/images";
+
 export const conversionPosts = [
   {
     slug: "landing-pages-paid-traffic-checklist",
@@ -10,7 +12,7 @@ export const conversionPosts = [
     date: "May 15, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
+      IMG.FUNNEL,
     content: [
       {
         heading: "Message match or nothing",
@@ -52,7 +54,7 @@ export const conversionPosts = [
     date: "May 1, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
+      IMG.WEBDESIGN,
     content: [
       {
         heading: "Your page has one job above the fold",
@@ -93,7 +95,7 @@ export const conversionPosts = [
     date: "Apr 17, 2026",
     readTime: "8 min read",
     image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop",
+      IMG.SHOPPING,
     content: [
       {
         heading: "Not all elements are equal",
@@ -136,7 +138,7 @@ export const conversionPosts = [
     date: "Apr 3, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1200&auto=format&fit=crop",
+      IMG.FITNESS,
     content: [
       {
         heading: "The cost of slow, quantified",
@@ -175,7 +177,7 @@ export const conversionPosts = [
     date: "Mar 20, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+      IMG.HOME,
     content: [
       {
         heading: "The counterintuitive finding",
@@ -216,7 +218,7 @@ export const conversionPosts = [
     date: "Mar 6, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop",
+      IMG.SVC_PAID_SOCIAL,
     content: [
       {
         heading: "The peeking problem",

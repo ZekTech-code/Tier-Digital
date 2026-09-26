@@ -1,3 +1,5 @@
+import { IMG } from "../../config/images";
+
 export const creativeStrategyPosts = [
   {
     slug: "creative-testing-framework-that-scales",
@@ -10,7 +12,7 @@ export const creativeStrategyPosts = [
     date: "Jul 28, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
+      IMG.CREATIVE,
     content: [
       {
         heading: "Stop testing ads. Start testing angles.",
@@ -50,7 +52,7 @@ export const creativeStrategyPosts = [
     date: "Jul 21, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format&fit=crop",
+      IMG.PODCAST_STUDIO,
     content: [
       {
         heading: "The video bubble deflated",
@@ -90,7 +92,7 @@ export const creativeStrategyPosts = [
     date: "Jul 7, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop",
+      IMG.BEAUTY,
     content: [
       {
         heading: "Hooks are headlines wearing sneakers",
@@ -133,7 +135,7 @@ export const creativeStrategyPosts = [
     date: "Jun 21, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop",
+      IMG.TEAM_DISCUSSION,
     content: [
       {
         heading: "The first 3 seconds decide everything",
@@ -172,7 +174,7 @@ export const creativeStrategyPosts = [
     date: "Jun 14, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+      IMG.TEAM_COLLAB,
     content: [
       {
         heading: "Scripts kill the thing you paid for",
@@ -213,7 +215,7 @@ export const creativeStrategyPosts = [
     date: "May 31, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1589903308904-1010c2294adc?q=80&w=1200&auto=format&fit=crop",
+      IMG.PODCAST_MIC,
     content: [
       {
         heading: "ROAS is a lagging indicator",

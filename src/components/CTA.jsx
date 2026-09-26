@@ -6,15 +6,7 @@ import ScrollReveal from "./ScrollReveal";
 const CTA = () => {
   return (
     <section className="py-24 relative overflow-hidden" id="contact">
-      {/* Background with gradient and subtle texture overlay */}
-      <div className="absolute inset-0 bg-slate-900">
-        <div className="absolute inset-0 bg-linear-to-br from-indigo-900/50 via-slate-900 to-blue-900/40"></div>
-        {/* Abstract shapes for visual interest */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-indigo-500/10 blur-[120px]"></div>
-          <div className="absolute top-[60%] right-[5%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[100px]"></div>
-        </div>
-      </div>
+      <div className="absolute inset-0 bg-slate-900"></div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal animation="fade-scale">

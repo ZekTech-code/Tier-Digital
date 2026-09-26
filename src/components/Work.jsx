@@ -28,10 +28,6 @@ const Work = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-200 dark:bg-indigo-800 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[120px] opacity-30 translate-x-1/2 -translate-y-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-125 h-125 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-[120px] opacity-30 -translate-x-1/2 translate-y-1/3"></div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <ScrollReveal animation="fade-right">

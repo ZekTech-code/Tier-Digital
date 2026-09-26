@@ -39,9 +39,6 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-[#020617] text-slate-300 pt-24 pb-12 overflow-hidden border-t border-slate-900">
-      {/* Background */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-100 bg-indigo-600/10 blur-[120px] rounded-full pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           {/* Brand */}

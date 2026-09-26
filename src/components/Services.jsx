@@ -98,9 +98,6 @@ const Services = () => {
 
           {/* Special CTA Card to fill the 6th spot */}
           <div className="relative bg-linear-to-br from-indigo-600 to-blue-700 rounded-xl p-8 text-white overflow-hidden flex flex-col justify-center items-start group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-indigo-600/30 transition-all duration-300 hover:-translate-y-1">
-             {/* Background glow effect inside card */}
-             <div className="absolute -top-24 -right-24 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
-
              <h4 className="text-3xl font-black mb-4 relative z-10 leading-tight">Ready to scale?</h4>
              <p className="text-indigo-100 mb-10 max-w-sm relative z-10 font-medium text-lg">
                Book a free strategy session to see how much revenue you're leaving on the table.

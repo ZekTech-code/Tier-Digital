@@ -1,6 +1,5 @@
-import { createContext, useContext, useEffect, useLayoutEffect, useState } from "react";
-
-const ThemeContext = createContext({ theme: "light", toggleTheme: () => {} });
+import { useEffect, useLayoutEffect, useState } from "react";
+import { ThemeContext } from "./themeCtx";
 
 const getInitialTheme = () => {
   const stored = localStorage.getItem("theme");
@@ -42,5 +41,3 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-
-export const useTheme = () => useContext(ThemeContext);

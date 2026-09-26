@@ -1,3 +1,5 @@
+import { IMG } from "../../config/images";
+
 export const paidSocialPosts = [
   {
     slug: "meta-advantage-plus-shopping-2026-playbook",
@@ -10,7 +12,7 @@ export const paidSocialPosts = [
     date: "Aug 12, 2026",
     readTime: "8 min read",
     image:
-      "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
+      IMG.SOCIAL_ADS,
     featured: true,
     content: [
       {
@@ -52,7 +54,7 @@ export const paidSocialPosts = [
     date: "Aug 5, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop",
+      IMG.SOCIAL_MEDIA,
     content: [
       {
         heading: "The setup: a fair fight",
@@ -94,7 +96,7 @@ export const paidSocialPosts = [
     date: "Jul 22, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+      IMG.MOBILE_ADS,
     content: [
       {
         heading: "The uncomfortable truth about retargeting",
@@ -134,7 +136,7 @@ export const paidSocialPosts = [
     date: "Jul 15, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop",
+      IMG.STRATEGY,
     content: [
       {
         heading: "The hidden cost of hard daily caps",
@@ -175,7 +177,7 @@ export const paidSocialPosts = [
     date: "Jun 24, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+      IMG.TEAM_COLLAB,
     content: [
       {
         heading: "The audience builder is a museum",
@@ -215,7 +217,7 @@ export const paidSocialPosts = [
     date: "May 28, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
+      IMG.TEAM_MEETING,
     content: [
       {
         heading: "The form-fill trap",
