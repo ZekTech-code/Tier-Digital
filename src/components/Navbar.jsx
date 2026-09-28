@@ -30,6 +30,20 @@ const Navbar = () => {
     }
   };
 
+  const handleNavClick = (e, item) => {
+    setIsOpen(false);
+
+    if (item.href.includes("#")) {
+      handleHashClick(e, item.href);
+      return;
+    }
+
+    if (location.pathname === item.href && !location.hash) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   const linkClass = ({ isActive }) =>
     `text-sm font-bold uppercase tracking-wide relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300 ${
       isActive
@@ -63,7 +77,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.href}
                     end={item.href === "/"}
-                    onClick={(e) => handleHashClick(e, item.href)}
+                    onClick={(e) => handleNavClick(e, item)}
                     className={
                       item.href.includes("#")
                         ? "text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 uppercase tracking-wide relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300"
@@ -120,7 +134,7 @@ const Navbar = () => {
                     : "text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 bg-slate-50 dark:bg-slate-900 hover:bg-indigo-50 dark:hover:bg-slate-800 border-slate-100 dark:border-slate-800"
                 }`
               }
-              onClick={(e) => { handleHashClick(e, item.href); setIsOpen(false); }}
+              onClick={(e) => handleNavClick(e, item)}
             >
               {item.name}
             </NavLink>
