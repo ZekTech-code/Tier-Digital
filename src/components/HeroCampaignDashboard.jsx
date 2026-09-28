@@ -201,7 +201,7 @@ export default function HeroCampaignDashboard() {
               Nova Audio · Sponsored
             </p>
             <p className="mt-0.5 truncate text-[11px] font-bold leading-snug text-white">
-              AeroBuds Pro — 40% Off
+              AeroBuds Pro 40% Off
             </p>
             <p className="text-[10px] font-semibold text-blue-400">From $29 today</p>
           </div>
