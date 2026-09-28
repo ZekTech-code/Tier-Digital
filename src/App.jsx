@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
@@ -6,18 +6,33 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
 
-const Home = lazy(() => import("./pages/Home"));
-const Blog = lazy(() => import("./pages/Blog"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
-const Podcast = lazy(() => import("./pages/Podcast"));
-const Careers = lazy(() => import("./pages/Careers"));
-const Contact = lazy(() => import("./pages/Contact"));
-const CaseStudies = lazy(() => import("./pages/CaseStudies"));
-const CaseStudy = lazy(() => import("./pages/CaseStudy"));
-const ServicePage = lazy(() => import("./pages/ServicePage"));
-const Privacy = lazy(() => import("./pages/Privacy"));
-const Terms = lazy(() => import("./pages/Terms"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const routeModules = {
+  Home: () => import("./pages/Home"),
+  Blog: () => import("./pages/Blog"),
+  BlogPost: () => import("./pages/BlogPost"),
+  Podcast: () => import("./pages/Podcast"),
+  Careers: () => import("./pages/Careers"),
+  Contact: () => import("./pages/Contact"),
+  CaseStudies: () => import("./pages/CaseStudies"),
+  CaseStudy: () => import("./pages/CaseStudy"),
+  ServicePage: () => import("./pages/ServicePage"),
+  Privacy: () => import("./pages/Privacy"),
+  Terms: () => import("./pages/Terms"),
+  NotFound: () => import("./pages/NotFound"),
+};
+
+const Home = lazy(routeModules.Home);
+const Blog = lazy(routeModules.Blog);
+const BlogPost = lazy(routeModules.BlogPost);
+const Podcast = lazy(routeModules.Podcast);
+const Careers = lazy(routeModules.Careers);
+const Contact = lazy(routeModules.Contact);
+const CaseStudies = lazy(routeModules.CaseStudies);
+const CaseStudy = lazy(routeModules.CaseStudy);
+const ServicePage = lazy(routeModules.ServicePage);
+const Privacy = lazy(routeModules.Privacy);
+const Terms = lazy(routeModules.Terms);
+const NotFound = lazy(routeModules.NotFound);
 
 const RouteFallback = () => (
   <div
@@ -30,6 +45,22 @@ const RouteFallback = () => (
 );
 
 const App = () => {
+  useEffect(() => {
+    const warmRoutes = () => {
+      Object.values(routeModules).forEach((load) => {
+        load().catch(() => {});
+      });
+    };
+
+    if (typeof window.requestIdleCallback === "function") {
+      window.requestIdleCallback(warmRoutes, { timeout: 4000 });
+      return undefined;
+    }
+
+    const timer = window.setTimeout(warmRoutes, 2000);
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <ThemeProvider>
       <BrowserRouter>
