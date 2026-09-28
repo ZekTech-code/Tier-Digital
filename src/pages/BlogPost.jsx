@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock, User } from "lucide-react";
 import { blogPosts } from "../data/blogPosts";
+import { imgAt, srcSet, hideOnError } from "../config/images";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -76,10 +77,17 @@ const BlogPost = () => {
       {/* Cover Image */}
       <section className="pb-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="rounded-xl overflow-hidden shadow-lg bg-slate-200 dark:bg-slate-800">
             <img
-              src={post.image}
+              src={imgAt(post.image, 1024)}
+              srcSet={srcSet(post.image, [640, 1024])}
+              sizes="(min-width: 1280px) 1024px, calc(100vw - 32px)"
               alt={post.title}
+              width={1024}
+              height={600}
+              fetchPriority="high"
+              decoding="async"
+              onError={hideOnError}
               className="w-full h-72 md:h-96 object-cover"
             />
           </div>
@@ -151,10 +159,17 @@ const BlogPost = () => {
                 to={`/blog/${rel.slug}`}
                 className="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="h-44 overflow-hidden">
+                <div className="h-44 overflow-hidden bg-slate-200 dark:bg-slate-800">
                   <img
-                    src={rel.image}
+                    src={imgAt(rel.image, 640)}
+                    srcSet={srcSet(rel.image, [320, 480, 640])}
+                    sizes="(min-width: 1024px) 384px, (min-width: 768px) calc(50vw - 56px), calc(100vw - 32px)"
                     alt={rel.title}
+                    width={640}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
+                    onError={hideOnError}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>

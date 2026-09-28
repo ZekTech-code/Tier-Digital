@@ -2,6 +2,22 @@ import React from "react";
 import ScrollReveal from "./ScrollReveal";
 import { IMG } from "../config/images";
 
+const nameFallback = (name) =>
+  `data:image/svg+xml;utf8,${encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56"><text x="120" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#64748b">${name}</text></svg>`
+  )}`;
+
+const handleLogoError = (event) => {
+  const img = event.currentTarget;
+  if (img.dataset.fallback === "1") {
+    img.style.visibility = "hidden";
+    return;
+  }
+  img.dataset.fallback = "1";
+  img.style.filter = "none";
+  img.src = nameFallback(img.alt.replace(" logo", ""));
+};
+
 const Trust = () => {
   const logos = [
     { name: "Amazon", url: IMG.LOGO_AMAZON, width: "w-24" },
@@ -35,6 +51,11 @@ const Trust = () => {
                 <img
                   src={logo.url}
                   alt={`${logo.name} logo`}
+                  width={240}
+                  height={56}
+                  loading="lazy"
+                  decoding="async"
+                  onError={handleLogoError}
                   className={`object-contain ${logo.width} opacity-40 hover:opacity-100 transition-all duration-300 drop-shadow-sm ${
                     logo.name === "Google" ? "dark:invert" : ""
                   }`}

@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, CalendarDays, Clock } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import ScrollReveal from "../components/ScrollReveal";
 import { blogPosts, postCategories } from "../data/blogPosts";
+import { imgAt, srcSet, hideOnError } from "../config/images";
 
 const authorColors = {
   "David Okafor": "from-indigo-500 to-blue-600",
@@ -38,10 +39,17 @@ const Blog = () => {
               to={`/blog/${featured.slug}`}
               className="group grid lg:grid-cols-2 gap-10 items-center bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500"
             >
-            <div className="relative h-72 lg:h-full min-h-80 overflow-hidden">
+            <div className="relative h-72 lg:h-full min-h-80 overflow-hidden bg-slate-200 dark:bg-slate-800">
               <img
-                src={featured.image}
+                src={imgAt(featured.image, 800)}
+                srcSet={srcSet(featured.image, [480, 800])}
+                sizes="(min-width: 1024px) 588px, 100vw"
                 alt={featured.title}
+                width={800}
+                height={520}
+                fetchPriority="high"
+                decoding="async"
+                onError={hideOnError}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <span className="absolute top-5 left-5 px-3 py-1.5 bg-indigo-600 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg">
@@ -126,10 +134,17 @@ const Blog = () => {
                 to={`/blog/${post.slug}`}
                 className="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="relative h-52 overflow-hidden">
+                <div className="relative h-52 overflow-hidden bg-slate-200 dark:bg-slate-800">
                   <img
-                    src={post.image}
+                    src={imgAt(post.image, 640)}
+                    srcSet={srcSet(post.image, [320, 480, 640])}
+                    sizes="(min-width: 1024px) 384px, (min-width: 768px) calc(50vw - 56px), calc(100vw - 32px)"
                     alt={post.title}
+                    width={640}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
+                    onError={hideOnError}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider rounded-full shadow-sm">

@@ -19,6 +19,30 @@ const pick = (key) =>
     ? images[key]
     : PLACEHOLDER;
 
+const UNSPLASH_HOST = "images.unsplash.com";
+
+export const imgAt = (url, width, quality = 70) => {
+  if (typeof url !== "string" || url.startsWith("data:")) return url;
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname !== UNSPLASH_HOST) return url;
+    parsed.searchParams.set("w", String(width));
+    parsed.searchParams.set("q", String(quality));
+    parsed.searchParams.set("auto", "format");
+    parsed.searchParams.set("fit", "crop");
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+};
+
+export const srcSet = (url, widths, quality = 70) =>
+  widths.map((w) => `${imgAt(url, w, quality)} ${w}w`).join(", ");
+
+export const hideOnError = (event) => {
+  event.currentTarget.style.visibility = "hidden";
+};
+
 export const IMG = {
   HERO_TEAM: pick("HERO_TEAM"),
 
