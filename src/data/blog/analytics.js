@@ -26,7 +26,7 @@ export const analyticsPosts = [
           "We combine server-side tracking via the Conversions API, blended MER (marketing efficiency ratio) as the north star, geo-lift tests for incrementality on big spends, and post-purchase surveys for self-reported attribution. Each covers the blind spots of the others.",
         ],
         list: [
-          "MER: total revenue ÷ total ad spend, reviewed weekly — the honest headline number",
+          "MER: total revenue ÷ total ad spend, reviewed weekly, the honest headline number",
           "Conversions API: restores event signal lost to browser restrictions",
           "Geo-lift tests: the closest thing to a true causal answer money can buy",
           "Post-purchase surveys: customers will happily tell you where they came from",
@@ -35,7 +35,7 @@ export const analyticsPosts = [
       {
         heading: "Make decisions on trends, not days",
         paragraphs: [
-          "Daily platform numbers are noise. We review pacing weekly and make structural budget decisions monthly. Teams that react to daily fluctuations end up perpetually resetting their learning phases — and paying for it in performance.",
+          "Daily platform numbers are noise. We review pacing weekly and make structural budget decisions monthly. Teams that react to daily fluctuations end up perpetually resetting their learning phases, and paying for it in performance.",
         ],
       },
     ],
@@ -44,7 +44,7 @@ export const analyticsPosts = [
     slug: "mer-explained-metric-cfo-cares-about",
     title: "MER Explained: The Only Metric Your CFO Actually Cares About",
     excerpt:
-      "ROAS lies by omission. MER — marketing efficiency ratio — tells you what your marketing is really doing to the bank account. Here's how to use it.",
+      "ROAS lies by omission. MER, marketing efficiency ratio, tells you what your marketing is really doing to the bank account. Here's how to use it.",
     category: "Analytics",
     author: "Priya Nair",
     authorRole: "Analytics Lead",
@@ -63,11 +63,11 @@ export const analyticsPosts = [
       {
         heading: "How to run a business on MER",
         paragraphs: [
-          "Set a target MER from your margins: if gross margin is 60% and you need operating profit, your break-even MER might be 1.7 — meaning anything above that creates real money. Then manage weekly pacing against that line instead of platform dashboards.",
+          "Set a target MER from your margins: if gross margin is 60% and you need operating profit, your break-even MER might be 1.7, meaning anything above that creates real money. Then manage weekly pacing against that line instead of platform dashboards.",
         ],
         list: [
           "Compute it weekly and monthly; daily MER is too noisy to act on",
-          "Watch trend direction over absolute value — a falling MER precedes trouble",
+          "Watch trend direction over absolute value, a falling MER precedes trouble",
           "Pair with new-vs-returning revenue split to know what's actually driving moves",
           "Use platform ROAS for tactical optimization only, never for budget truth",
         ],
@@ -75,7 +75,7 @@ export const analyticsPosts = [
       {
         heading: "Where MER misleads",
         paragraphs: [
-          "MER lags: today's spend may pay off next month, especially for considered purchases. And it blends everything — a great email month can mask deteriorating paid efficiency. That's why MER is the north star, not the only instrument: pair it with channel-level diagnostics and you get both truth and explanation.",
+          "MER lags: today's spend may pay off next month, especially for considered purchases. And it blends everything, a great email month can mask deteriorating paid efficiency. That's why MER is the north star, not the only instrument: pair it with channel-level diagnostics and you get both truth and explanation.",
         ],
       },
     ],
@@ -84,7 +84,7 @@ export const analyticsPosts = [
     slug: "conversions-api-setup-right-way",
     title: "Conversions API Setup: Doing It Right (Most Accounts Don't)",
     excerpt:
-      "A half-configured Conversions API is worse than none — it feeds the algorithm confident nonsense. Here's the setup checklist we run on every new account.",
+      "A half-configured Conversions API is worse than none, it feeds the algorithm confident nonsense. Here's the setup checklist we run on every new account.",
     category: "Analytics",
     author: "Priya Nair",
     authorRole: "Analytics Lead",
@@ -96,27 +96,27 @@ export const analyticsPosts = [
       {
         heading: "Why server-side stopped being optional",
         paragraphs: [
-          "Browser-side pixels now miss a large share of events — iOS restrictions, ad blockers, cookie lifetimes measured in days. The Conversions API sends events directly from your server, restoring signal the browser can't lose. Accounts that implement it properly typically recover 10–30% of previously invisible conversions.",
+          "Browser-side pixels now miss a large share of events, iOS restrictions, ad blockers, cookie lifetimes measured in days. The Conversions API sends events directly from your server, restoring signal the browser can't lose. Accounts that implement it properly typically recover 10–30% of previously invisible conversions.",
           "But deduplication matters: send the same event from pixel and server without matching event IDs and you'll double-count yourself into false confidence.",
         ],
       },
       {
         heading: "The setup checklist",
         paragraphs: [
-          "This is the sequence we run on every new engagement. Skipping steps produces the 'confident nonsense' problem — data that looks fine and quietly poisons optimization.",
+          "This is the sequence we run on every new engagement. Skipping steps produces the 'confident nonsense' problem, data that looks fine and quietly poisons optimization.",
         ],
         list: [
-          "Event Match Quality above 6.0 on priority events — hash email, phone, and external ID",
+          "Event Match Quality above 6.0 on priority events, hash email, phone, and external ID",
           "Event IDs matched between pixel and CAPI for perfect deduplication",
           "Priority events mapped: Purchase, InitiateCheckout, AddToCart, Lead",
-          "Value and currency passed on every purchase event — no exceptions",
+          "Value and currency passed on every purchase event, no exceptions",
           "Events Manager error rate monitored weekly, not just at launch",
         ],
       },
       {
         heading: "Verify, then verify again",
         paragraphs: [
-          "After setup, compare CAPI-received events against your backend orders for a two-week window. Discrepancies above 5% mean something is dropping or duplicating. We also keep a UTM-based spreadsheet reconciliation as the final sanity check — boring, and it catches what dashboards hide.",
+          "After setup, compare CAPI-received events against your backend orders for a two-week window. Discrepancies above 5% mean something is dropping or duplicating. We also keep a UTM-based spreadsheet reconciliation as the final sanity check, boring, and it catches what dashboards hide.",
         ],
       },
     ],
@@ -138,25 +138,25 @@ export const analyticsPosts = [
         heading: "The question platforms can't answer",
         paragraphs: [
           "Attribution tells you what platforms claim. Geo-lift tells you what actually happened. By holding some regions out of ad delivery and comparing them against exposed regions, you measure causality directly: did the ads create sales, or just relabel them?",
-          "Historically this required holdouts big enough to matter statistically — enterprise territory. Modern platform tooling and smarter design have shrunk the minimum viable test dramatically.",
+          "Historically this required holdouts big enough to matter statistically, enterprise territory. Modern platform tooling and smarter design have shrunk the minimum viable test dramatically.",
         ],
       },
       {
         heading: "Designing a test that fits your budget",
         paragraphs: [
-          "The trick is choosing comparisons carefully. Matched-market designs pair similar regions — one treated, one held out — which squeezes far more signal from smaller spends than naive splits.",
+          "The trick is choosing comparisons carefully. Matched-market designs pair similar regions, one treated, one held out, which squeezes far more signal from smaller spends than naive splits.",
         ],
         list: [
           "Pick 2–4 region pairs matched on population and historical sales similarity",
           "Run 4–6 weeks minimum; shorter tests drown in weekly noise",
-          "Keep total spend during test unchanged — moving budgets contaminates results",
+          "Keep total spend during test unchanged, moving budgets contaminates results",
           "Read results on revenue-per-capita deltas, not raw revenue",
         ],
       },
       {
         heading: "What to do with the answer",
         paragraphs: [
-          "Expect humbling results: narrow retargeting frequently shows near-zero incremental lift, while prospecting shows less than reported but more than skeptics guess. Both findings are gold — they tell you where the next dollar actually earns money.",
+          "Expect humbling results: narrow retargeting frequently shows near-zero incremental lift, while prospecting shows less than reported but more than skeptics guess. Both findings are gold, they tell you where the next dollar actually earns money.",
           "One honest lift test per quarter beats a year of dashboard archaeology.",
         ],
       },
@@ -178,20 +178,20 @@ export const analyticsPosts = [
       {
         heading: "Reporting theater is real",
         paragraphs: [
-          "Walk into most marketing teams and you'll find a beautiful dashboard nobody acts on. Forty charts, twelve sources, zero decisions. A dashboard earns its existence only when someone can look at it and know what to do next — everything else is expense.",
+          "Walk into most marketing teams and you'll find a beautiful dashboard nobody acts on. Forty charts, twelve sources, zero decisions. A dashboard earns its existence only when someone can look at it and know what to do next, everything else is expense.",
         ],
       },
       {
         heading: "Five rules for dashboards that work",
         paragraphs: [
-          "Every dashboard we ship follows these rules. They're restrictive on purpose — constraint is what turns data into instruments.",
+          "Every dashboard we ship follows these rules. They're restrictive on purpose, constraint is what turns data into instruments.",
         ],
         list: [
           "One question per dashboard: 'are we hitting plan?' not 'everything about marketing'",
-          "Targets on every metric — a number without a threshold is trivia",
+          "Targets on every metric, a number without a threshold is trivia",
           "Trend context always: sparklines beside every KPI, never naked current values",
           "Action column: each metric names what we do if it's red",
-          "Weekly cadence enforced — refreshed automatically, reviewed in one standing meeting",
+          "Weekly cadence enforced, refreshed automatically, reviewed in one standing meeting",
         ],
       },
       {
@@ -206,7 +206,7 @@ export const analyticsPosts = [
     slug: "cohort-analysis-reading-ltv",
     title: "Cohort Analysis for Beginners: Finally Reading LTV Correctly",
     excerpt:
-      "Blended LTV is a fortune teller's average. Cohort analysis shows you what's actually happening to each month's customers — and it's easier than it looks.",
+      "Blended LTV is a fortune teller's average. Cohort analysis shows you what's actually happening to each month's customers, and it's easier than it looks.",
     category: "Analytics",
     author: "Priya Nair",
     authorRole: "Analytics Lead",
@@ -230,7 +230,7 @@ export const analyticsPosts = [
         list: [
           "Rows = acquisition months; columns = months since purchase",
           "Each cell = average cumulative revenue per customer in that cohort",
-          "Color-scale the table — decay patterns jump out visually",
+          "Color-scale the table, decay patterns jump out visually",
           "Add a repeat-rate row per cohort to separate frequency from value effects",
         ],
       },

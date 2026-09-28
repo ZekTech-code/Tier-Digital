@@ -17,7 +17,7 @@ export const creativeStrategyPosts = [
       {
         heading: "Stop testing ads. Start testing angles.",
         paragraphs: [
-          "An angle is the core persuasion idea behind an ad: 'your skincare routine is too complicated', 'great skin shouldn't cost $90', 'dermatologists hate this one trick'. Individual ads are just expressions of an angle. When teams test individual ads without thinking about angles, they learn what won — but not why.",
+          "An angle is the core persuasion idea behind an ad: 'your skincare routine is too complicated', 'great skin shouldn't cost $90', 'dermatologists hate this one trick'. Individual ads are just expressions of an angle. When teams test individual ads without thinking about angles, they learn what won, but not why.",
           "We map every client's market into 5–7 core angles before a single ad is produced. Each angle gets its own hypothesis about which customer tension it resolves.",
         ],
       },
@@ -25,7 +25,7 @@ export const creativeStrategyPosts = [
         heading: "The two-week sprint",
         paragraphs: [
           "Week one is divergence: produce 3 lightweight ads per angle, launch them into a dedicated testing campaign, and let them spend enough to exit the learning phase. Week two is convergence: take the top two angles, produce 4–6 polished variations of each, and push spend behind the winners.",
-          "This rhythm means you're never more than 14 days away from knowing exactly which message resonates — and your production budget flows toward proven ideas instead of guesses.",
+          "This rhythm means you're never more than 14 days away from knowing exactly which message resonates, and your production budget flows toward proven ideas instead of guesses.",
         ],
         list: [
           "Days 1–7: 15–21 test creatives across all angles, minimal polish, speed over beauty",
@@ -57,18 +57,18 @@ export const creativeStrategyPosts = [
       {
         heading: "The video bubble deflated",
         paragraphs: [
-          "From 2021 to 2024, 'video-first' was creative dogma. Then two things happened: video production costs kept climbing while feed saturation made every brand's videos look identical. Static images — fast to produce, cheap to iterate, instantly readable — started winning auctions again.",
+          "From 2021 to 2024, 'video-first' was creative dogma. Then two things happened: video production costs kept climbing while feed saturation made every brand's videos look identical. Static images, fast to produce, cheap to iterate, instantly readable, started winning auctions again.",
           "Across our accounts last quarter, statics accounted for 34% of spend but 41% of revenue. They're not a nostalgia play; they're a unit-economics play.",
         ],
       },
       {
         heading: "Where statics win",
         paragraphs: [
-          "Statics excel at single-message clarity: one offer, one claim, one visual proof. They also iterate at 10x the speed of video — a designer can turn around six headline-and-image variants in an afternoon, which makes them perfect for angle testing before you commit video budget.",
+          "Statics excel at single-message clarity: one offer, one claim, one visual proof. They also iterate at 10x the speed of video, a designer can turn around six headline-and-image variants in an afternoon, which makes them perfect for angle testing before you commit video budget.",
         ],
         list: [
           "Offer-led statics: price, bundle, or free-shipping promises with clean typography",
-          "Review screenshots styled natively — social proof that reads like a text message",
+          "Review screenshots styled natively, social proof that reads like a text message",
           "Before/after splits with minimal design treatment",
           "Meme-format and text-post styles for cold audiences",
         ],
@@ -97,7 +97,7 @@ export const creativeStrategyPosts = [
       {
         heading: "Hooks are headlines wearing sneakers",
         paragraphs: [
-          "A hook is not a clever line. It's a targeting decision expressed as words. The best hooks name the audience, the problem, or the outcome so specifically that the right people feel caught — and everyone else scrolls past happily. Specificity is the filter that does your targeting for free.",
+          "A hook is not a clever line. It's a targeting decision expressed as words. The best hooks name the audience, the problem, or the outcome so specifically that the right people feel caught, and everyone else scrolls past happily. Specificity is the filter that does your targeting for free.",
           "'I tried every sleep supplement' targets skeptics. 'If you wake up at 3am every night' targets insomniacs. Same product, different door.",
         ],
       },
@@ -118,7 +118,7 @@ export const creativeStrategyPosts = [
       {
         heading: "Test hooks like keywords",
         paragraphs: [
-          "One video concept should ship with 4–6 different hooks — same body, swapped first three seconds. Hook swaps are the cheapest performance lever in existence: no reshoot, no re-edit beyond the opening, and swing factors of 2–3x in hold rates are common.",
+          "One video concept should ship with 4–6 different hooks, same body, swapped first three seconds. Hook swaps are the cheapest performance lever in existence: no reshoot, no re-edit beyond the opening, and swing factors of 2–3x in hold rates are common.",
           "Track hook-rate (3-second views ÷ impressions) separately from hold-rate. A great hook with a weak middle tells you exactly where to fix next.",
         ],
       },
@@ -147,18 +147,18 @@ export const creativeStrategyPosts = [
       {
         heading: "Imperfection is a feature",
         paragraphs: [
-          "The highest-converting UGC looks like it was filmed on a phone by a real customer — because it usually was. Studio-polished 'UGC' performed measurably worse. Slight camera shake, natural lighting, and conversational filler words all correlate with higher trust and higher click-through.",
+          "The highest-converting UGC looks like it was filmed on a phone by a real customer, because it usually was. Studio-polished 'UGC' performed measurably worse. Slight camera shake, natural lighting, and conversational filler words all correlate with higher trust and higher click-through.",
         ],
         list: [
           "Film vertically, native to the platform, no repurposed landscape crops",
-          "One idea per ad — cramming three benefits into thirty seconds kills conversion",
+          "One idea per ad, cramming three benefits into thirty seconds kills conversion",
           "Captions always on; a majority of feed viewing happens on mute",
         ],
       },
       {
         heading: "Give creators a brief, not a script",
         paragraphs: [
-          "Scripts produce ads that all sound the same and fatigue together. Briefs — defining the tension, the outcome, and the proof — produce variations you can actually learn from. We give creators the angle and the must-mention points, then let them speak like humans.",
+          "Scripts produce ads that all sound the same and fatigue together. Briefs, defining the tension, the outcome, and the proof, produce variations you can actually learn from. We give creators the angle and the must-mention points, then let them speak like humans.",
         ],
       },
     ],
@@ -179,7 +179,7 @@ export const creativeStrategyPosts = [
       {
         heading: "Scripts kill the thing you paid for",
         paragraphs: [
-          "You hired a creator because their voice converts with their audience. Then you sent them a word-for-word script, and they recorded it like a hostage. What comes back is a worse version of an ad your team could have made — with none of the native credibility.",
+          "You hired a creator because their voice converts with their audience. Then you sent them a word-for-word script, and they recorded it like a hostage. What comes back is a worse version of an ad your team could have made, with none of the native credibility.",
           "The fix is briefing outcomes, not lines. Define the destination clearly and let the creator choose the route.",
         ],
       },
@@ -199,7 +199,7 @@ export const creativeStrategyPosts = [
       {
         heading: "Buy usage rights up front",
         paragraphs: [
-          "Negotiate paid usage and whitelisting rights in the original agreement — retroactive rights cost 3–5x more once a video proves itself. And brief for volume: one creator session should yield 4–6 distinct ads, because the second-best take often outperforms the one everyone loved on set.",
+          "Negotiate paid usage and whitelisting rights in the original agreement, retroactive rights cost 3–5x more once a video proves itself. And brief for volume: one creator session should yield 4–6 distinct ads, because the second-best take often outperforms the one everyone loved on set.",
         ],
       },
     ],
@@ -208,7 +208,7 @@ export const creativeStrategyPosts = [
     slug: "creative-fatigue-spot-it-early",
     title: "Creative Fatigue: How to Spot It Before Your ROAS Dies",
     excerpt:
-      "Fatigue never arrives announced — it shows up in leading indicators weeks before revenue drops. Watch these four signals and rotate early.",
+      "Fatigue never arrives announced, it shows up in leading indicators weeks before revenue drops. Watch these four signals and rotate early.",
     category: "Creative Strategy",
     author: "Amara Bello",
     authorRole: "Creative Director",
@@ -220,7 +220,7 @@ export const creativeStrategyPosts = [
       {
         heading: "ROAS is a lagging indicator",
         paragraphs: [
-          "By the time ROAS visibly drops, the audience has been saturated for a week or more. The platforms' delivery systems mask decay by finding progressively broader (and lower-intent) audiences to keep spending your budget — so spend stays stable while efficiency quietly erodes.",
+          "By the time ROAS visibly drops, the audience has been saturated for a week or more. The platforms' delivery systems mask decay by finding progressively broader (and lower-intent) audiences to keep spending your budget, so spend stays stable while efficiency quietly erodes.",
           "Reading fatigue from ROAS alone means always reacting late. The trick is watching metrics that move before money does.",
         ],
       },
@@ -232,14 +232,14 @@ export const creativeStrategyPosts = [
         list: [
           "Frequency above ~2.5 in a 7-day window on prospecting budgets",
           "Hook rate declining 20%+ from the ad's own baseline",
-          "CPM rising while CTR falls — the auction charging more for less attention",
+          "CPM rising while CTR falls, the auction charging more for less attention",
           "First-time impression ratio dropping below 60% of deliveries",
         ],
       },
       {
         heading: "Rotate, don't replace",
         paragraphs: [
-          "When fatigue hits, don't delete the winner — edit it. New hook on the same body, new opening frame, re-cut pacing. Refreshed winners routinely recover 70–80% of peak performance because the persuasion core still works; only the packaging wore out.",
+          "When fatigue hits, don't delete the winner, edit it. New hook on the same body, new opening frame, re-cut pacing. Refreshed winners routinely recover 70–80% of peak performance because the persuasion core still works; only the packaging wore out.",
           "And keep a bench: two proven ads in reserve per active campaign, ready to deploy the day your leader starts limping.",
         ],
       },

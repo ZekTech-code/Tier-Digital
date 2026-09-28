@@ -5,7 +5,7 @@ export const paidSocialPosts = [
     slug: "meta-advantage-plus-shopping-2026-playbook",
     title: "The 2026 Playbook for Meta Advantage+ Shopping Campaigns",
     excerpt:
-      "Advantage+ has quietly become Meta's most profitable campaign type — if you structure it correctly. Here's the exact framework we use to scale DTC brands past $500k/month.",
+      "Advantage+ has quietly become Meta's most profitable campaign type, if you structure it correctly. Here's the exact framework we use to scale DTC brands past $500k/month.",
     category: "Paid Social",
     author: "David Okafor",
     authorRole: "Head of Performance",
@@ -18,7 +18,7 @@ export const paidSocialPosts = [
       {
         heading: "Why Advantage+ keeps winning",
         paragraphs: [
-          "When Meta first pushed Advantage+ Shopping Campaigns (ASC), most experienced media buyers treated it as a black box — a tool for beginners who didn't know how to build audiences manually. Two years later, the data tells a very different story. Across the 30+ accounts we manage, ASC consistently outperforms hand-built structures on both ROAS and incremental revenue.",
+          "When Meta first pushed Advantage+ Shopping Campaigns (ASC), most experienced media buyers treated it as a black box, a tool for beginners who didn't know how to build audiences manually. Two years later, the data tells a very different story. Across the 30+ accounts we manage, ASC consistently outperforms hand-built structures on both ROAS and incremental revenue.",
           "The reason is simple: Meta's delivery system now has more signal than any manual audience you can construct. With Andromeda ranking and AI-driven creative rotation, the algorithm makes thousands of micro-decisions per second that no human team could replicate.",
         ],
       },
@@ -59,7 +59,7 @@ export const paidSocialPosts = [
       {
         heading: "The setup: a fair fight",
         paragraphs: [
-          "For six months we split budgets evenly between TikTok and Meta across four DTC clients in beauty, fitness, home goods, and apparel — roughly $400k total per platform. Same creative library where specs allowed, same landing pages, same measurement stack.",
+          "For six months we split budgets evenly between TikTok and Meta across four DTC clients in beauty, fitness, home goods, and apparel, roughly $400k total per platform. Same creative library where specs allowed, same landing pages, same measurement stack.",
           "Before the results: the popular narrative says TikTok CPMs are far cheaper, so it must win. The reality is more nuanced, because cheap impressions and profitable customers are not the same thing.",
         ],
       },
@@ -67,11 +67,11 @@ export const paidSocialPosts = [
         heading: "What the numbers showed",
         paragraphs: [
           "TikTok did deliver CPMs roughly 40% lower on average. But click-through rates told the opposite story: Meta's feed environment, with its stronger purchase intent signals, converted clicks to purchases nearly twice as efficiently for three of the four brands.",
-          "Blended together, the winning allocation wasn't 100/0 or even 70/30. For most catalogs, the sweet spot landed at 75–85% Meta, 15–25% TikTok — with TikTok over-indexing on new-to-brand customer acquisition and viral creative discovery.",
+          "Blended together, the winning allocation wasn't 100/0 or even 70/30. For most catalogs, the sweet spot landed at 75–85% Meta, 15–25% TikTok, with TikTok over-indexing on new-to-brand customer acquisition and viral creative discovery.",
         ],
         list: [
           "Beauty brand: TikTok drove 34% of new customers on just 20% of spend",
-          "Fitness app: Meta won decisively — TikTok CPA never got within 2x of Meta's",
+          "Fitness app: Meta won decisively, TikTok CPA never got within 2x of Meta's",
           "Home goods: near tie on MER, but Meta won on repeat purchase rate",
           "Apparel: TikTok creative went organically viral twice, slashing blended CAC",
         ],
@@ -79,7 +79,7 @@ export const paidSocialPosts = [
       {
         heading: "How to decide for your brand",
         paragraphs: [
-          "Run a real test, not a vibe. Allocate 15–20% of budget to TikTok for eight weeks minimum, measure new-customer CPA and 60-day LTV separately by platform, and judge on contribution margin — not platform-reported ROAS.",
+          "Run a real test, not a vibe. Allocate 15–20% of budget to TikTok for eight weeks minimum, measure new-customer CPA and 60-day LTV separately by platform, and judge on contribution margin, not platform-reported ROAS.",
           "And critically: do not simply re-upload your Meta ads. Native TikTok creative follows different pacing, sounds, and formats. Brands that cross-post without adaptation see performance drop by half or worse.",
         ],
       },
@@ -109,10 +109,10 @@ export const paidSocialPosts = [
         heading: "What still works: three honest plays",
         paragraphs: [
           "First-party list retargeting remains powerful because email and phone lists don't depend on browser cookies. Upload your customer and subscriber lists, exclude them from prospecting, and run distinct offers to lapsed buyers versus active ones.",
-          "Broad prospecting with creative-as-targeting has absorbed much of retargeting's old job. When your ads speak to specific objections — price, fit, doubt — they effectively retarget within the feed, reaching people the pixel can't see.",
+          "Broad prospecting with creative-as-targeting has absorbed much of retargeting's old job. When your ads speak to specific objections, price, fit, doubt, they effectively retarget within the feed, reaching people the pixel can't see.",
         ],
         list: [
-          "First-party lists: customers, subscribers, quiz takers — matched and segmented by behavior",
+          "First-party lists: customers, subscribers, quiz takers, matched and segmented by behavior",
           "Engagement custom audiences: video viewers and page engagers, still partially observable",
           "Objection-led prospecting creative that does the persuading retargeting used to do",
         ],
@@ -141,7 +141,7 @@ export const paidSocialPosts = [
       {
         heading: "The hidden cost of hard daily caps",
         paragraphs: [
-          "Demand doesn't arrive in neat daily portions. A viral mention, a payday weekend, a competitor stumbling — these create surges of high-intent traffic that a rigid daily budget cuts off at noon. Every capped surge is inventory you paid learning costs for and then refused to buy.",
+          "Demand doesn't arrive in neat daily portions. A viral mention, a payday weekend, a competitor stumbling, these create surges of high-intent traffic that a rigid daily budget cuts off at noon. Every capped surge is inventory you paid learning costs for and then refused to buy.",
           "Worse, frequent budget edits reset learning. Every time you raise or lower a campaign budget by more than ~20%, the delivery system re-enters exploration, and you pay exploration prices for days.",
         ],
       },
@@ -149,19 +149,19 @@ export const paidSocialPosts = [
         heading: "Pace weekly, not daily",
         paragraphs: [
           "The fix is structural: set campaign budgets at the weekly level where the platform supports it, or set daily caps high enough that only true anomalies hit them, then manage pacing through bid caps and creative rotation instead of throttling.",
-          "Our pacing model tracks cumulative weekly spend against target, flags deviations greater than 12%, and only intervenes when trajectory — not a single day — is off track.",
+          "Our pacing model tracks cumulative weekly spend against target, flags deviations greater than 12%, and only intervenes when trajectory, not a single day, is off track.",
         ],
         list: [
           "Set budgets weekly; review trajectory Monday, Wednesday, Friday",
           "Never edit budgets more than ±20% in one change",
-          "Let winning days run — cap losers, not winners",
+          "Let winning days run, cap losers, not winners",
           "Hold a 10% flex reserve for scaling proven performers mid-week",
         ],
       },
       {
         heading: "What good pacing looks like",
         paragraphs: [
-          "In well-paced accounts, daily spend varies meaningfully — sometimes 2x between a Tuesday and a Saturday — while weekly totals land within a few percent of plan. If your daily spend graph looks like a flat line, you're almost certainly leaving volume on the table.",
+          "In well-paced accounts, daily spend varies meaningfully, sometimes 2x between a Tuesday and a Saturday, while weekly totals land within a few percent of plan. If your daily spend graph looks like a flat line, you're almost certainly leaving volume on the table.",
         ],
       },
     ],
@@ -182,7 +182,7 @@ export const paidSocialPosts = [
       {
         heading: "The audience builder is a museum",
         paragraphs: [
-          "Interest stacking was the core skill of media buying circa 2018. Today it's mostly ritual. With Andromeda ranking, Meta evaluates every impression in real time using far richer signals than any interest taxonomy — past purchase behavior, engagement patterns, catalog interactions, and thousands of features no human combines.",
+          "Interest stacking was the core skill of media buying circa 2018. Today it's mostly ritual. With Andromeda ranking, Meta evaluates every impression in real time using far richer signals than any interest taxonomy, past purchase behavior, engagement patterns, catalog interactions, and thousands of features no human combines.",
           "Across our accounts, broad-targeted ad sets match or beat interest audiences in 85%+ of head-to-head tests, usually with lower CPAs and better scaling behavior.",
         ],
       },
@@ -190,18 +190,18 @@ export const paidSocialPosts = [
         heading: "Where narrowing still earns its place",
         paragraphs: [
           "Broad isn't a religion. Three cases still justify constraints: legal or compliance exclusions (age-gated products), small catalogs with genuinely narrow markets, and creative that only makes sense to a definable segment.",
-          "Even then, prefer exclusions over inclusions — telling the algorithm who NOT to show (existing customers, recent purchasers) preserves its freedom while protecting your margin.",
+          "Even then, prefer exclusions over inclusions, telling the algorithm who NOT to show (existing customers, recent purchasers) preserves its freedom while protecting your margin.",
         ],
         list: [
           "Use exclusions (customers, recent purchasers) instead of interest inclusions",
-          "Let creative carry the targeting message — a fishing ad self-selects anglers",
+          "Let creative carry the targeting message, a fishing ad self-selects anglers",
           "Test broad vs. interests quarterly; the winner shifts as signal grows",
         ],
       },
       {
         heading: "Redirect the effort",
         paragraphs: [
-          "The hours you stop spending building audiences should flow straight into creative production. That trade — audience curation for creative volume — is the single highest-ROI swap a media team can make in 2026.",
+          "The hours you stop spending building audiences should flow straight into creative production. That trade, audience curation for creative volume, is the single highest-ROI swap a media team can make in 2026.",
         ],
       },
     ],
@@ -222,14 +222,14 @@ export const paidSocialPosts = [
       {
         heading: "The form-fill trap",
         paragraphs: [
-          "Meta instant forms convert clicks at 3–5x the rate of landing pages, which makes them irresistible — and dangerous. Frictionless lead capture imports low intent along with it. Teams that celebrate cost-per-lead routinely discover their 'cheap' leads never answer the phone.",
+          "Meta instant forms convert clicks at 3–5x the rate of landing pages, which makes them irresistible, and dangerous. Frictionless lead capture imports low intent along with it. Teams that celebrate cost-per-lead routinely discover their 'cheap' leads never answer the phone.",
           "The fix isn't abandoning native forms. It's engineering quality back into the funnel deliberately.",
         ],
       },
       {
         heading: "Engineer the form for intent",
         paragraphs: [
-          "Add friction where it filters. A single higher-commitment question — budget range, timeline, current provider — drops volume meaningfully while doubling downstream close rates. Higher-intent form types and conditional questions do the same work invisibly.",
+          "Add friction where it filters. A single higher-commitment question, budget range, timeline, current provider, drops volume meaningfully while doubling downstream close rates. Higher-intent form types and conditional questions do the same work invisibly.",
           "Then connect speed to follow-up. Leads contacted within five minutes convert at multiples of those contacted the next day. Instant CRM routing and automated SMS acknowledgment are non-negotiable.",
         ],
         list: [
@@ -243,7 +243,7 @@ export const paidSocialPosts = [
         heading: "Close the loop with revenue data",
         paragraphs: [
           "The final unlock is sending closed-won and closed-lost signals back to Meta via the Conversions API. Within weeks, delivery shifts toward the profiles that actually become customers, not just the profiles that fill forms fastest.",
-          "Accounts that complete this loop typically see cost-per-opportunity fall 30–50% within a quarter — while cost-per-lead rises slightly, and nobody minds.",
+          "Accounts that complete this loop typically see cost-per-opportunity fall 30–50% within a quarter, while cost-per-lead rises slightly, and nobody minds.",
         ],
       },
     ],
