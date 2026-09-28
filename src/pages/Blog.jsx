@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, CalendarDays, Clock } from "lucide-react";
 import PageHeader from "../components/PageHeader";
-import ScrollReveal from "../components/ScrollReveal";
 import { blogPosts, postCategories } from "../data/blogPosts";
 import { imgAt, srcSet, hideOnError } from "../config/images";
 
@@ -34,7 +33,6 @@ const Blog = () => {
       {/* Featured Post */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal animation="fade-up">
             <Link
               to={`/blog/${featured.slug}`}
               className="group grid lg:grid-cols-2 gap-10 items-center bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500"
@@ -96,14 +94,12 @@ const Blog = () => {
               </div>
             </div>
           </Link>
-          </ScrollReveal>
         </div>
       </section>
 
       {/* Category Filter + Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal animation="fade-up">
             <div className="flex flex-wrap gap-3 mb-14">
             {postCategories.map((cat) => (
               <button
@@ -124,9 +120,7 @@ const Blog = () => {
               </button>
             ))}
           </div>
-          </ScrollReveal>
 
-          <ScrollReveal animation="fade-up">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {rest.map((post) => (
               <Link
@@ -180,7 +174,6 @@ const Blog = () => {
               </Link>
             ))}
           </div>
-          </ScrollReveal>
 
           {rest.length === 0 && (
             <p className="text-center text-slate-500 dark:text-slate-400 font-medium py-12">
